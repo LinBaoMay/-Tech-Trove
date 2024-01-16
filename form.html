@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/CSS/form.css" />
+    <title>Оформлення замовлення</title>
+</head>
+
+<body>
+    <div>
+        <div class="info-cont">
+            <div class="container">
+                <ul class="info-list">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Оплата і доставка</a></li>
+                    <li><a href="#">Обмін та повернення</a></li>
+                    <li><a href="#">Контактна інформація</a></li>
+                </ul>
+
+                <ul class="lang-list">
+                    <li>Укр</li>
+                    <li>Eng</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-container">
+        <div class="container">
+            <div class="telephone">
+                <img src="./Assets/Images/SVG/Phone.svg" alt="telephone" />
+                <p>380 679 250 757</p>
+            </div>
+
+            <a href="./index.html"><img src="./Assets/Images/SVG/Logo.svg" alt="logotype" /></a>
+            <div class="cart">
+                <img src="./Assets/Images/SVG/Cart.svg" alt="cart" />
+                <a href="#">Мій кошик</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <ul>
+            <li><a href="./smartphones.html">Смартфони</a></li>
+        <li><a href="./tablets.html">Планшети</a></li>
+        <li><a href="#">Смарт-годинники</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="form">
+        <div class="container">
+            <div class="container-form">
+                
+                    <h1>Оформлення замовлення</h1>
+            <div class="city">
+                    <div class="city-container">
+                        <label for="cityInput">Ваше місто:</label>
+                        <input type="text" id="cityInput" name="cityInput" placeholder="Введіть місто">
+                    </div>
+                </div>
+        
+                <div class="cart-container">
+                    <h2>Ваші замовлення:</h2>
+                    <div id="cart-list-container"></div>
+                </div>
+        
+                <div class="Contact-info">
+                    <h2>Контактна інформація:</h2>
+                    <form id="orderForm">
+                        <div>
+                            <label for="phoneNumber">Номер телефону</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="+38-(  )- - -"/>
+                        </div>
+            
+                        <div>
+                            <label for="fullName">Ім'я</label>
+                            <input type="text" id="fullName" name="fullName" required />
+                        </div>
+            
+            
+                        <div>
+                            <label for="e-mail">E-mail</label>
+                            <input type="text" id="e-mail" name="e-mail" required />
+                        </div>
+            
+                </div>
+        
+                    <div class="Delivery">
+                        <h2>Спосіб доставки:</h2>
+                        <div class="city-container">
+                    <label for="cityInput">Відділення</label>
+                    <input type="text" id="cityInput" name="cityInput" placeholder="Введіть адресу та номер відділення">
+                </div>
+                        <label>
+                            <input type="radio" name="delivery" value="NovaPoshta" required />
+                            Нова пошта
+                        </label>
+                        <label>
+                            <input type="radio" name="delivery" value="UkrPoshta" required />
+                            Укрпошта
+                        </label>
+                        <label>
+                            <input type="radio" name="delivery" value="SelfPickup" required />
+                            Самовивіз з магазину
+                        </label>
+                    </div>
+        
+                    <div class="Pay">
+                        <h2>Спосіб оплати:</h2>
+                        <label><input type="radio" name="payment" value="CashOnDelivery" required />
+                            Оплата при отриманні</label>
+                        <label><input type="radio" name="payment" value="BankTransfer" required />
+                            Оплата на реквізити</label>
+                    </div>
+        
+                    <div id="bankTransferDetails" style="display: none">
+                        <p>Реквізити будуть відправлені на ваш номер телефону.</p>
+                    </div>
+        </div>
+    
+                <div class="total">
+                    <div id="total-price-container"></div>
+                    <button type="submit">Оформити замовлення</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./Assets/JS/cart.js"></script>
+<script src="./Assets/JS/form.js"></script>
+
+
+</html>

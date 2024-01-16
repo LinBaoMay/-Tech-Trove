@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/CSS/smart-watches.css" />
+    <title>Каталог смарт-годинників</title>
+  </head>
+
+  <body>
+    <div>
+      <div class="info-cont">
+        <div class="container">
+          <ul class="info-list">
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Оплата і доставка</a></li>
+            <li><a href="#">Обмін та повернення</a></li>
+            <li><a href="#">Контактна інформація</a></li>
+          </ul>
+
+          <ul class="lang-list">
+            <li>Укр</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-container">
+      <div class="container">
+        <div class="telephone">
+          <img src="./Assets/Images/SVG/Phone.svg" alt="telephone" />
+          <p>380 679 250 757</p>
+        </div>
+
+        <a href="./index.html"><img src="./Assets/Images/SVG/Logo.svg" alt="logotype" /></a>
+        <div class="cart">
+          <img src="./Assets/Images/SVG/Cart.svg" alt="cart" />
+          <a href="#">Мій кошик</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li><a href="./smartphones.html">Смартфони</a></li>
+        <li><a href="./tablets.html">Планшети</a></li>
+        <li><a href="./smart-watches.html">Смарт-годинники</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="way">
+        <span><a href="#">Головна</a>Планшети</span>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="catalog">Каталог</div>
+      <div class="sorter">
+        <ul class="sorter-list">
+          <li><h3>Сортування:</h3></li>
+          <li>
+            <button id="sortAscBtn" class="btn-minPrice">найдешевші</button>
+          </li>
+          <li>
+            <button id="sortDescBtn" class="btn-maxPrice">найдорожчі</button>
+          </li>
+          <li><input class="search" type="text" placeholder="Пошук" /></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="filters">
+        <div class="filter-item">
+          <label><input type="checkbox" id="saleCheckbox" /> Розпродаж</label>
+        </div>
+        <div class="filter-item">
+          <label><input type="checkbox" id="newCheckbox" /> Новинка</label>
+        </div>
+        <div class="filter-item">
+          <label
+            ><input type="checkbox" id="bestsellerCheckbox" /> Хіт
+            продажу</label
+          >
+        </div>
+        <div class="filter-item">
+          <h3>Ціна</h3>
+          <input type="number" id="minPrice" />
+          <input type="number" id="maxPrice" />
+          <button id="priceFilterBtn" class="btn-minPrice">OK</button>
+        </div>
+        <div class="filter-item">
+          <h3>Наявність на складі</h3>
+          <label
+            ><input type="checkbox" id="inStockCheckbox" /> В наявності</label
+          >
+        </div>
+        <div class="filter-item">
+          <label
+            ><input type="checkbox" id="endingSoonCheckbox" />
+            Закінчується</label
+          >
+        </div>
+        <div class="filter-item">
+          <label
+            ><input type="checkbox" id="outOfStockCheckbox" /> Нема в
+            наявності</label
+          >
+        </div>
+        <div class="filter-item">
+          <h3>Бренд</h3>
+          <div class="filter-item">
+            <label
+              ><input type="checkbox" class="brandCheckbox" value="Blackview" />
+              Blackview</label
+            >
+          </div>
+          <div class="filter-item">
+            <label
+              ><input type="checkbox" class="brandCheckbox" value="Huawei" />
+              Huawei</label
+            >
+          </div>
+          <div class="filter-item">
+            <label
+              ><input type="checkbox" class="brandCheckbox" value="AmiGo" />
+              AmiGo</label
+            >
+          </div>
+          <div class="filter-item">
+            <label
+              ><input type="checkbox" class="brandCheckbox" value="Elari" />
+              Elari</label
+            >
+          </div>
+          <div class="filter-item">
+            <label
+              ><input type="checkbox" class="brandCheckbox" value="Xiaomi" />
+              Xiaomi</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="products">
+        <!-- Тут буде місце для виведення продуктів -->
+      </div>
+      <div id="cart-info"></div>
+
+    </div>
+
+    </div>
+
+    <footer>
+      <div class="footer">
+          <div class="footer-container">
+            <div class="store-info">
+              <img src="./Assets/Images/SVG/Logo.svg" alt="logotype">
+              <p>
+                Дослівно - Tech Trove це технологічна знахідка, що демонструє мету магазину - відібрати кращу продукцію китайських брендів, які за свою ціну не поступаються дорогим флагманам та айфонам.
+              </p>
+            </div>
+
+            <div class="footer-navigation">
+              <div class="footer-catalog">
+                <h3 class="catalog-title">Каталог</h3>
+                  <div class="catalog-item"><a href="./smartphones.html">Смартфони</a></div>
+                  <div class="catalog-item"><a href="./tablets.html">Планшети</a></div>
+                  <div class="catalog-item"><a href="./smart-watches.html">Смарт-годинники</a></div>
+              </div>
+  
+              <div class="for-clients">
+                <h3 class="catalog-title">Клієнтам</h3>
+                  <div class="catalog-item"><a href="./smartphones.html">Про нас</a></div>
+                  <div class="catalog-item"><a href="./tablets.html">Оплата і доставка</a></div>
+                  <div class="catalog-item"><a href="./smart-watches.html">Обмін та повернення</a></div>
+                  <div class="catalog-item"><a href="./smart-watches.html">Контактна інформація</a></div>
+              </div>
+
+              <div class="contacts">
+                <h3 class="catalog-title">Зв'язок з нами</h3>
+                  <div class="footer-telephone">
+          <img src="./Assets/Images/SVG/Phone.svg" alt="telephone" />
+          <p>380 679 250 757</p>
+        </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>
+</html>
+
+<script src="./Assets/JS/cart.js"></script>
+<script src="./Assets/JS/smart-watches.js"></script>
+
